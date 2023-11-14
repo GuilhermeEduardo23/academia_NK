@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #fff;
 }
 
@@ -48,7 +48,7 @@ header .navs {
 header .navs a {
     font-size: 1rem;
     text-decoration: none;
-    padding: 1rem;
+    padding: .5rem;
     border-radius: 10px;
     transition: .5s;
     color: #fff;
@@ -98,6 +98,7 @@ main {
 
 .title {
     color: #fff;
+    text-transform: uppercase;
 }
 
 main section {
@@ -112,31 +113,58 @@ main .first-section {
     gap: 2rem;
     font-size: 2rem;
     flex-wrap: wrap;
-    min-height: 50vh;
 }
 
 main .first-section p {
     text-align: center;
 }
 
+main .second-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 550px;
+}
+
+main .second-section img {
+    border-radius: 10px;
+}
+
+main .third-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.third-section .address {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+main .third-section iframe {
+    border-radius: 10px;
+}
+
 main .fourth-section {
     background: green;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .fourth-section .img {
     width: 50%;
-    background: yellow;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .img img {
-    width: 50%;
+    width: 80%;
     border-radius: 10px;
 }
 

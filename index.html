@@ -25,7 +25,7 @@
         <!--Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 
         <!--Script JS-->
         <script src="./scripts/main.js" defer></script>
@@ -38,21 +38,23 @@
             <a href="index.html" class="tracking-in-expand logo">Academia N<span class="k">K</span></a>
 
             <nav class="navs">
-                <a href="#home" id="home">HOME</a>
-                <a href="#contato" id="contato">CONTATO</a>
+                <a href="#home">HOME</a>
+                <a href="#photos">FOTOS</a>
+                <a href="#location">LOCALIZAÇÃO</a>
+                <a href="#contact">CONTATO</a>
             </nav>
         </header>
 
         <main>
-            <section class="first-section">
+            <section class="first-section" id="home">
                 <p>
                     Malhar não fica mais fácil, você que fica melhor a cada treino!
                 </p>
                 <p>"Exercícios não mudam apenas o seu corpo. Mudam sua mente, suas atitudes e o seu humor!"💪</p>
             </section>
 
-            <section class="second-section">
-                <div id="carouselExampleIndicators" class="carousel slide d-flex align-items-center">
+            <section class="second-section" id="photos">
+                <div id="carouselExampleIndicators" class="carousel slide d-flex align-items-center w-50">
                     <!--Início indicadores do carousel-->
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -64,16 +66,16 @@
 
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="./assets/images/Photos/2.jpeg" class="d-block w-100" alt="...">
+                        <img src="./assets/images/Photos/2.jpeg" class="d-block w-100" alt="Aparelhos da academia">
                       </div>
                       <div class="carousel-item">
-                        <img src="./assets/images/Photos/3.jpeg" class="d-block w-100" alt="...">
+                        <img src="./assets/images/Photos/3.jpeg" class="d-block w-100" alt="Aparelhos da academia">
                       </div>
                       <div class="carousel-item">
-                        <img src="./assets/images/Photos/5.jpeg" class="d-block w-100" alt="...">
+                        <img src="./assets/images/Photos/5.jpeg" class="d-block w-100" alt="Aparelhos da academia">
                       </div>
                       <div class="carousel-item">
-                        <img src="./assets/images/Photos/6.jpeg" class="d-block w-100" alt="...">
+                        <img src="./assets/images/Photos/6.jpeg" class="d-block w-100" alt="Exterior da academia">
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -84,34 +86,36 @@
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
-                  </div>
+                </div>
             </section>
 
-            <section class="third-section">
+            <section class="third-section" id="location">
                 <h1 class="title">Onde estamos localizados</h1>
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.4325402966283!2d-49.25398291087871!3d-18.418660012012808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a10ce552f02977%3A0x9fac359f33bbfd9e!2sAv.%20Marilaine%20Borges%20de%20Oliveira%20Faria%20-%20Jardim%20Leonora%2C%20Itumbiara%20-%20GO%2C%2075534-414%2C%20Brasil!5e0!3m2!1spt-BR!2spt!4v1699968754531!5m2!1spt-BR!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="address">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.4325402966283!2d-49.25398291087871!3d-18.418660012012808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a10ce552f02977%3A0x9fac359f33bbfd9e!2sAv.%20Marilaine%20Borges%20de%20Oliveira%20Faria%20-%20Jardim%20Leonora%2C%20Itumbiara%20-%20GO%2C%2075534-414%2C%20Brasil!5e0!3m2!1spt-BR!2spt!4v1699968754531!5m2!1spt-BR!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                <p>Avenida Marilaine Borges Oliveira Faria, Nº 732 
-                    <br> 
-                    Residencial Sonho Verde
-                    <br>
-                    CEP: 75534-414
-                    <br>
-                    Itumbiara-GO, Brasil
-                </p>
+                    <p>Avenida Marilaine Borges Oliveira Faria, Nº 732 
+                        <br> 
+                        Residencial Sonho Verde
+                        <br>
+                        CEP: 75534-414
+                        <br>
+                        Itumbiara-GO, Brasil
+                    </p>
+                </div>
             </section>
 
-            <section class="fourth-section">
+            <section class="fourth-section" id="contact">
                 <div class="img">
                     <img src="./assets/images/logo-academia-nk.jpg" alt="Logo da Academia NK" class="img-logo">
                 </div>
 
                 <div class="contato">
-                    <h1 class="title">SIGA-NOS NO INSTAGRAM OU ENTRE EM CONTATO CONOSCO</h1>
+                    <h2">Siga-nos no Instagram ou entre em contato pelo WhatsApp</h2>
 
-                    <ion-icon name="logo-whatsapp" class="icons"></ion-icon>
-                    <ion-icon name="logo-instagram" class="icons"></ion-icon>
+                    <a href=""><ion-icon name="logo-whatsapp" class="icons" title="WhatsApp"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-instagram" class="icons" title="Instagram"></ion-icon></a>
                 </div>
                 
 
