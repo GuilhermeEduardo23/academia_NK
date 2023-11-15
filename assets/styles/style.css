@@ -12,7 +12,6 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    
 }
 
 header {
@@ -21,15 +20,12 @@ header {
     align-items: center;
     flex-wrap: wrap;
     min-height: 80px;
-    box-sizing: border-box;
     padding: .8rem;
 }
 
 header .logo {
-    font-weight: 700;
     font-size: 1.5rem;
     text-decoration: none;
-    transition: 0.5s all;
     color: #fff;
 }
 
@@ -111,7 +107,7 @@ main .first-section {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     flex-wrap: wrap;
 }
 
@@ -123,11 +119,11 @@ main .second-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 550px;
 }
 
 main .second-section img {
     border-radius: 10px;
+    border: 1px solid #f58634;
 }
 
 main .third-section {
@@ -150,8 +146,8 @@ main .third-section iframe {
 }
 
 main .fourth-section {
-    background: green;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -164,7 +160,8 @@ main .fourth-section {
 }
 
 .img img {
-    width: 80%;
+    width: 50%;
+    border: 2px solid #fff;
     border-radius: 10px;
 }
 
@@ -172,10 +169,30 @@ main .fourth-section {
     width: 50%;
 }
 
-.contato .title {
-    
+.contato .icons {
+    font-size: 1.5rem;
 }
 
-.contato .icons {
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f5b181;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #f58634;
 }
